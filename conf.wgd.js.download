@@ -1,0 +1,146 @@
+try{
+document.querySelectorAll('#searchBtn')[0].addEventListener('click',function(){
+var slided = document.querySelectorAll(".wgSlideInFromBottom");
+if ( slided.length ){
+	document.querySelectorAll('.close_sticky')[0].click();
+}
+});
+}catch(e){}
+
+var wgDesktopAdsOptions = {
+    global:{
+        minVerticalSpaceBetweenAds:20, 
+        units:[],
+	//customCSS:'@media only screen and (max-width: 768px) {.size4.ads {display: none !important;}}.ads::after{font: 600 10px/2 Arial,sans-serif !important;}',
+	customCSS:'.ads::after{font: 600 10px/2 Arial,sans-serif !important;} ',
+    },
+    options:{
+        enableSingleRequest     :false,
+        enableVideoAds          :true,
+        disableInitialLoad      :true,
+        enableAsyncRendering    :true,
+        addCode                 :true,
+        setCentering            :true,
+        enableLazyLoad          :true,
+        enableRefresh: true,
+		overwriteLazy: true,
+        refreshIntervals: [15000,15000,15000,20000,20000,25000,25000,30000],
+		lazyParams:{
+			    fetchMarginPercent: 0,
+                renderMarginPercent: 0,
+                mobileScaling: 1.0
+		},
+        iic: function(){
+
+            try {
+                document.body.classList.add("wgd");
+            }catch(e){
+
+            }
+          
+        }
+    },
+    units: {
+
+        inline: {
+            content: {
+                type: "class",
+                value: "wgd",
+                units: {
+                  
+               
+                  
+                   game_under: {
+                        ad_unit: '/1002212/WGAFC/Playsuikagame.com/Under',
+                        ad_size: [[728,90]],
+                 		mappings:[
+                          [[1030,0],[[970,90],[728,90]]],
+                          [[768,0],[[728,90]]],
+                          [[0,0],[]]
+                        ],
+						only_desktop:true,
+                        cascade:false,
+                     	no_size:true,
+                        //no_wg:true,
+						forced:true,
+                     	att_rules: {
+                            type: "cssrule",
+			                value: ".wgUnderAd",
+                            method: 'append',
+                            placement: "afterbegin",
+                            withLabel:"Advertisement",
+                            match:1
+                        },
+                        styles: {
+							margin:"0 auto",
+                            marginTop: "0px",
+                            marginBottom: "0px",
+                            maxWidth:"1200px",
+                            textAlign:"center",
+                            label: {
+                                fontSize: "12px",
+                              	color: "#ffffff",
+                              	
+                                
+                            }
+                        }
+                    }, 
+                  
+                           
+                  sticky_unit:{
+                        ad_unit:"/1002212/WGAFCSTICKY/Playsuikagame.com",
+                        ad_size:[[970,90], [728,90]],
+                        ad_falls:[[320,50]],
+                        lazy:false,
+                        lazy_offset:400,
+                    	cascade:false,
+                        //parallax:true,
+                        //refresh: -1,
+                        //rf_trigger: 180000,
+                        sticky:true,
+                        forced:true,
+                        autoclose: 180000,
+                        wait_for_collapse:'wgPrerollPlay',
+						wg_placement:'sticky',
+                        only_desktop:true,
+                        att_rules:{
+                            type:"cssrule",
+                            value:".wgd",
+                            method:"append",
+                            placement:"afterend",
+                            match:1
+                        },
+                        styles:{
+                            margin:"0 auto",
+                            marginBottom:"0px",
+                            marginTop:"0px",
+                            label: {
+                                fontSize: "11px",
+                                color:"#000"
+                            }
+                        },
+                        wrapper:{
+                            element:"div",
+                            type:"className",
+                            value:"wgStickyBottom",
+                            styles:{
+                                display:"block",
+                                position:"fixed",
+                                zIndex:"10001",
+                                bottom:0,
+                                padding:"0px",
+                                width:"100%",
+                                textAlign:"center",
+                                background:"#ffffff",
+                                boxSizing:"border-box"
+                            }
+                        }
+                    },
+                                  
+                }
+            }
+
+        }
+
+    }
+};
