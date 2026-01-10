@@ -5830,5 +5830,13 @@
     "url": "{HTML_URL}/duzh.html",
     "author": "Second Skull Games",
     "authorLink": "https://gamejolt.com/@SecondSkullGames"
+  },
+  {
+    "id": 671,
+    "name": "FDN",
+    "cover": "{COVER_URL}/duzh.png",
+    "url": "{HTML_URL}/fdn.html",
+    "author": "FriendlyNuke",
+    "authorLink": "https://gamejolt.com/@SecondSkullGames"
   }
 ]
