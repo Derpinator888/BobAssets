@@ -5838,5 +5838,13 @@
     "url": "{HTML_URL}/fdn.html",
     "author": "FriendlyNuke",
     "authorLink": "https://scratch.mit.edu/users/friendlynuke/"
+  },
+  {
+    "id": 672,
+    "name": "Infernal Caverns",
+    "cover": "{COVER_URL}/if.png",
+    "url": "{HTML_URL}/if.html",
+    "author": "Second Skull Games",
+    "authorLink": "https://gamejolt.com/@SecondSkullGames"
   }
 ]
