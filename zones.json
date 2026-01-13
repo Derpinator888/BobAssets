@@ -5846,5 +5846,13 @@
     "url": "{HTML_URL}/if.html",
     "author": "Second Skull Games",
     "authorLink": "https://gamejolt.com/@SecondSkullGames"
+  },
+  {
+    "id": 673,
+    "name": "Dashmetry",
+    "cover": "{COVER_URL}/Dashmetry.png",
+    "url": "{HTML_URL}/Dashmetry.html",
+    "author": "1Games.io",
+    "authorLink": "https://1games.io/"
   }
 ]
