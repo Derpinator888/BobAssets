@@ -2138,18 +2138,6 @@
     ]
   },
   {
-    "id": 253,
-    "name": "Chat Bot (A.|.I)",
-    "cover": "{COVER_URL}/253.png",
-    "url": "{HTML_URL}/253.html",
-    "author": "gn-math",
-    "authorLink": "https://gn-math.github.io",
-    "featured": true,
-    "special": [
-      "tools"
-    ]
-  },
-  {
     "id": 255,
     "name": "Crazy Chicken 3D",
     "cover": "{COVER_URL}/255.png",
