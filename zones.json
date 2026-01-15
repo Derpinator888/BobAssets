@@ -5854,5 +5854,21 @@
     "url": "{HTML_URL}/Dashmetry.html",
     "author": "1Games.io",
     "authorLink": "https://1games.io/"
+  },
+  {
+    "id": 674,
+    "name": "Five Nights at Ransomware",
+    "cover": "{COVER_URL}/fnar.png",
+    "url": "{HTML_URL}/fnar.html",
+    "author": "Bomb Boi",
+    "authorLink": "https://gamejolt.com/@Bomb_Boi"
+  }
+  {
+    "id": 675,
+    "name": "Five Nights on Drugs",
+    "cover": "{COVER_URL}/fnod.png",
+    "url": "{HTML_URL}/fnod.html",
+    "author": "Me",
+    "authorLink": ""
   }
 ]
